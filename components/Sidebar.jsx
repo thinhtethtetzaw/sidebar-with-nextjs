@@ -18,8 +18,8 @@ import { BiChevronDown, BiChevronRight, BiUserCircle } from "react-icons/bi";
 import Image from "next/image";
 
 const Sidebar = () => {
-	const [show, setShow] = useState(true);
-	const [showSubItem, setShowSubItem] = useState(true);
+	const [show, setShow] = useState(false);
+	const [showSubItem, setShowSubItem] = useState(false);
 
 	const clickHandler = () => {
 		setShow(!show);
@@ -124,7 +124,7 @@ const Sidebar = () => {
 			</div>
 
 			<div
-				className={`p-6 px-4 w-56 h-screen bg-[#006989] z-20 top-0 fixed transition-all ease-in-out delay-150 duration-200 shadow-sm ${
+				className={`p-6 px-4 w-56 h-screen bg-[#006989] z-20 top-0 fixed transition-all ease-in-out delay-150 duration-200 shadow-sm overflow-hidden overflow-y-scroll scrollbar-hide ${
 					show ? "left-0" : "-left-56"
 				}`}
 			>
