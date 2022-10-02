@@ -1,10 +1,10 @@
-import { FaBeer } from 'react-icons/fa';
+import { FaBeer } from "react-icons/fa";
+import Sidebar from "../components/Sidebar";
 
 export default function Home() {
-  return (
-    <div className="text-red-500">
-      Hello
-      <FaBeer className='w-10 h-10'/>
-    </div>
-  )
+	return (
+		<div>
+			<Sidebar />
+		</div>
+	);
 }
